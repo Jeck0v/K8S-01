@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fff-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fff
+  template:
+    metadata:
+      labels:
+        app: fff
+    spec:
+      containers:
+      - name: fff
+        image: jeck0v/fff
+        ports:
+        - containerPort: 80
