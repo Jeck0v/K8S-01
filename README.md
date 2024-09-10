@@ -10,6 +10,7 @@ Prerequisites:
 - FastAPI
 
 <hr>
+Set up your docker image, then we can get started:
 
 Starting:
 ```bash
